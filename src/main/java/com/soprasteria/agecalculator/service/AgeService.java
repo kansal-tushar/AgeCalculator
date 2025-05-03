@@ -6,7 +6,14 @@ import com.soprasteria.agecalculator.dto.response.AgeResponseDto;
 import com.soprasteria.agecalculator.exception.InvalidDateTimeFormatException;
 
 public interface AgeService {
-	
-    AgeResponseDto calculateAge (AgeCalculatorRequestDto ageCalculatorRequest) throws InvalidDateTimeFormatException;
-	
+
+	/**
+	 * 
+	 * Calculates the age by given person's DOB
+	 * @param ageCalculatorRequest request
+	 * @return AgeResponseDto
+	 * @throws InvalidDateTimeFormatException if date provided is not in valid format
+	 */
+	AgeResponseDto calculateAge (AgeCalculatorRequestDto ageCalculatorRequest) throws InvalidDateTimeFormatException;
+
 }

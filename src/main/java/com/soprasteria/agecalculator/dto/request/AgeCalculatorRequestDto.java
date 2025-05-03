@@ -10,6 +10,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class AgeCalculatorRequestDto {
    
-	@NotBlank(message="Date should not be blank")
+	@NotBlank(message="Birth Date should not be blank")
 	private String birthDate;
 }

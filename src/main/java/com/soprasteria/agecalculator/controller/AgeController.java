@@ -22,6 +22,13 @@ public class AgeController {
 	private AgeService ageService;
 	
 
+	/**
+	 * 
+	 * Calculates the age by the given person's DOB
+	 * @param ageCalculatorRequest request
+	 * @return ResponseEntity
+	 * @throws InvalidDateTimeFormatException if Date provide is not valid
+	 */
 	@PostMapping("/calculate")
 	public ResponseEntity<?> calculateAge(@Valid @RequestBody AgeCalculatorRequestDto ageCalculatorRequest) throws InvalidDateTimeFormatException {
 
